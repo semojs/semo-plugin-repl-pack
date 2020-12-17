@@ -1,0 +1,51 @@
+{
+  "name": "semo-plugin-repl-pack",
+  "version": "0.0.0",
+  "description": "A Semo plugin to pack all repl related plugins.",
+  "keywords": [
+    "semo",
+    "plugin",
+    "pack",
+    "repl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semojs/semo-plugin-repl-pack"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run clean && npm run build",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "semo-plugin-repl-hint": "^1.0.1",
+    "semo-plugin-repl-jsdoc": "^1.3.4",
+    "semo-plugin-repl-npm": "^1.1.0",
+    "semo-plugin-repl-sheet": "^1.1.1",
+    "semo-plugin-repl-tldr": "^1.1.1",
+    "semo-plugin-repl-translate": "^1.0.3",
+    "semo-plugin-repl-wiki": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
