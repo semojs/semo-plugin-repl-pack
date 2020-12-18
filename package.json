@@ -1,6 +1,6 @@
 {
   "name": "semo-plugin-repl-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Semo plugin to pack all repl related plugins.",
   "keywords": [
     "semo",
