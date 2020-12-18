@@ -11,3 +11,4 @@ This is a pack plugin for semo repl, which includes plugins as below.
 * semo-plugin-repl-hint
 
 # Licence
+MIT
